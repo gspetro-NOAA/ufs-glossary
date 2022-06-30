@@ -1,6 +1,6 @@
-.. HPC-Stack Users Guide master file, created by sphinx-quickstart on Wed Feb  9 11:38:12 2022.
+.. UFS glossary master file created by sphinx-quickstart on Wed Feb 9 11:38:12 2022.
    
-HPC-Stack User's Guide
+UFS Glossary
 ================================
 
 .. toctree::
