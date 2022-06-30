@@ -16,9 +16,9 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'HPC-Stack Users Guide'
-copyright = '2022, EMC/EPIC'
-author = 'EMC/EPIC'
+project = 'UFS Glossary'
+copyright = '2022, UFS/EPIC'
+author = 'UFS/EPIC'
 
 # The short X.Y version
 version = ''
@@ -117,7 +117,7 @@ def setup(app):
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'HPC-Stack Help'
+htmlhelp_basename = 'UFS Glossary Help'
 
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -145,7 +145,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'HPC-Stack.tex', 'HPC-Stack Users Guide',
+    (master_doc, 'UFS-Glossary.tex', 'UFS Glossary',
      ' ', 'manual'),
 ]
 
@@ -155,7 +155,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, 'HPC-Stack', 'HPC-Stack Users Guide',
+    (master_doc, 'UFS Glossary', 'UFS Glossary',
      [author], 1)
 ]
 
@@ -166,8 +166,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-    (master_doc, 'HPC-Stack', 'HPC-Stack Users Guide',
-     author, 'HPC-Stack', 'One line description of project.',
+    (master_doc, 'UFS Glossary', 'UFS Glossary',
+     author, 'UFS/EPIC', 'Glossary of terms related to numerical weather prediction and UFS models',
      'Miscellaneous'),
 ]
 

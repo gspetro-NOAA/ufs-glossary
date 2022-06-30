@@ -1,56 +1,5 @@
 
-![Ubuntu](https://github.com/noaa-emc/hpc-stack/workflows/Build%20Ubuntu/badge.svg)
-![macOS](https://github.com/noaa-emc/hpc-stack/workflows/Build%20macOS/badge.svg)
-
-# hpc-stack
-
-This repository provides a unified, shell script based build system
-for building the software stack needed for the NOAA [Universal Forecast
-System (UFS)](https://github.com/ufs-community/ufs-weather-model) and
-related products, and applications written for the [Joint Effort for
-Data assimilation Integration
-(JEDI)](https://jointcenterforsatellitedataassimilation-jedi-docs.readthedocs-hosted.com/en/latest/)
-framework.
-
-This is part of the [NCEPLIBS](https://github.com/NOAA-EMC/NCEPLIBS) project.
-
-## Authors
-
-Rahul Mahajan, Kyle Gerheiser, Dusan Jovic, Hang-Lei, Dom Heinzeller
-
-Code Manager: Kyle Gerheiser
-
-Installers:
-
-Machine     | Programmer
-------------|------------------
-Hera        | Kyle Gerheiser
-Jet         | Kyle Gerheiser
-Orion       | Hang-Lei
-WCOSS-Dell  | Hang-Lei
-WCOSS-Cray  | Hang-Lei
-Cheyenne    | Dom Heinzeller
-Gaea        | Dom Heinzeller
-
-## Contributors
-
-Mark Potts, Steve Lawrence, Ed Hartnett, Guoqing Ge, Raffaele Montuoro, David Huber
-
-## Prerequisites:
-
-The prerequisites of building hpc-stack are:
-
-- [Lmod](https://lmod.readthedocs.io/en/latest/) - An Environment Module System
-- CMake and make
-- wget and curl
-- git
-
-Building the software stack is a **Three-Step process**, as described in the documentation:
-
-- Step 1: Configure Build
-- Step 2: Set Up Compiler, MPI, Python, and Module System
-- Step 3: Build Software Stack
-
+This glossary assembles and refines terms within the `UFS Glossary <https://ufscommunity.org/about/glossary/>`__ and adds terms defined in the glossaries of the components systems and applications. 
 
 ## Disclaimer
 

@@ -8,9 +8,4 @@ HPC-Stack User's Guide
    :maxdepth: 3
    :caption: Contents:
    
-   hpc-intro
-   hpc-install
-   hpc-prereqs
-   hpc-parameters
-   hpc-components
-   hpc-notes
+   ufs-glossary
