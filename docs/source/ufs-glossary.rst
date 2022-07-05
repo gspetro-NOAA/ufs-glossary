@@ -96,10 +96,12 @@ Glossary
       Describes a workflow task that only needs to be run once per experiment, regardless of the number of cycles in the experiment.
    
    cycling
-      A forecast model and data assimilation system work together to form a repeatedly "cycling" analysis and forecast system. Cycling conveys earlier information through time to the present in a model-consistent manner.
+      A forecast model and data assimilation system work together to form a repeatedly "cycling" analysis and forecast system. Cycling conveys earlier information through time to the present in a model-consistent manner. The data assimilation system provides initial conditions; then, a forecast is run, and the results are compared to actual observations from the data assimilation system when they become available. The forecast results are combined with this new data, the system is updated, and the forecast is run again. The process continues cyclically. 
    
    ..
-      COMMENT: Run cycling def by someone
+      COMMENT: Run cycling def by someone. What system exactly is updated? How is the combination step different from the update step? 
+      Forecast, update, analyze, compare
+
 
    DA
    Data Assimilation
