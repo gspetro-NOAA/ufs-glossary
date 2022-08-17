@@ -21,16 +21,16 @@ Glossary
       Climatology-Calibrated Precipitation Analysis (CCPA) data. This data is required for METplus precipitation verification tasks within the SRW App. The most recent 8 days worth of data are publicly available and can be accessed `here <https://ftp.ncep.noaa.gov/data/nccf/com/ccpa/prod/>`__. 
 
    CCPP
-      The `Common Community Physics Package <https://dtcenter.org/community-code/common-community-physics-package-ccpp>`__ is a forecast-model agnostic, vetted collection of code containing atmospheric physical parameterizations and suites of parameterizations for use in Numerical Weather Prediction (NWP) along with a framework that connects the physics to the host forecast model.
+      The `Common Community Physics Package <https://dtcenter.org/community-code/common-community-physics-package-ccpp>`__ is a forecast-model agnostic, vetted collection of code containing atmospheric physical parameterizations and suites of parameterizations for use in Numerical Weather Prediction (:term:`NWP`) along with a framework that connects the physics to the host forecast model.
 
    CESM
       The `Community Earth System Model <https://www.cesm.ucar.edu/>`__ is a community climate model centered at the National Center for Atmospheric Research (:term:`NCAR`). 
 
    chgres_cube
-      The preprocessing software used to create initial and boundary condition files to "coldstart" the forecast model.
+      The preprocessing software used to create initial and boundary condition files to "coldstart" the forecast model. It is part of :term:`UFS_UTILS`. 
 
    CIME (Common Infrastructure for Modeling Earth)
-      The `Common Infrastructure for Modeling Earth <https://github.com/ESMCI/cime>`__ (CIME - pronounced “SEAM”) primarily consists of a Case Control System (CCS) that supports the configuration, compilation, execution, system testing, and unit testing of an Earth System Model. The CIME CCS is used in :term:`CESM` and in the Medium-Range Weather (MRW) Application. View the CIME documentation `here <https://esmci.github.io/cime/versions/master/html/index.html>`__. 
+      The `Common Infrastructure for Modeling Earth <https://github.com/ESMCI/cime>`__ (CIME - pronounced "SEAM") consists of a Case Control System (CCS) that supports the configuration, compilation, execution, system testing, and unit testing of an Earth System Model. The CIME CCS is used in :term:`CESM` and was previously used in the Medium-Range Weather (MRW) Application. View the CIME documentation `here <https://esmci.github.io/cime/versions/master/html/index.html>`__. 
 
    CIN
       Convective Inhibition.
@@ -41,17 +41,6 @@ Glossary
    compiler
       A program that converts instructions into a machine-code or lower-level form so that they can be read and executed by a computer.
       A compiler is a special program that translates a high-level programming language's source code into machine code, bytecode or another programming language. The source code is typically written in a high-level, human-readable language such as Java or C++. 
-
-   Coupler
-      See :term:`Mediator`.
-
-   cron
-   crontab
-   cron table
-      Cron is a job scheduler accessed through the command-line on UNIX-like operating systems. It is useful for automating tasks such as the ``rocotorun`` command, which launches each workflow task in the SRW App. Cron periodically checks a cron table (aka crontab) to see if any tasks are are ready to execute. If so, it runs them. 
-
-   CRTM
-      `Community Radiative Transfer Model <https://www.jcsda.org/jcsda-project-community-radiative-transfer-model>`__. CRTM is a fast and accurate radiative transfer model developed at the `Joint Center for Satellite Data Assimilation <https://www.jcsda.org/>`__ (JCSDA) in the United States. It is a sensor-based radiative transfer model and supports more than 100 sensors, including sensors on most meteorological satellites and some from other remote sensing satellites. 
 
    Component
       A software element that has a clear function and interface. In Earth system models, components are often single portions of the Earth system (e.g. atmosphere, ocean, or land surface) that are assembled to form a whole.
@@ -84,6 +73,17 @@ Glossary
    CAM
    convection-allowing models
       Convection-allowing models (CAMs) are models that run on high-resolution grids (usually with grid spacing at 4km or less). They are able to resolve the effects of small-scale convective processes. They typically run several times a day to provide frequent forecasts (e.g., hourly or subhourly). 
+
+   Coupler
+      See :term:`Mediator`.
+
+   cron
+   crontab
+   cron table
+      Cron is a job scheduler accessed through the command-line on UNIX-like operating systems. It is useful for automating tasks such as the ``rocotorun`` command, which launches each workflow task in the SRW App. Cron periodically checks a cron table (aka crontab) to see if any tasks are are ready to execute. If so, it runs them. 
+
+   CRTM
+      `Community Radiative Transfer Model <https://www.jcsda.org/jcsda-project-community-radiative-transfer-model>`__. CRTM is a fast and accurate radiative transfer model developed at the `Joint Center for Satellite Data Assimilation <https://www.jcsda.org/>`__ (JCSDA) in the United States. It is a sensor-based radiative transfer model and supports more than 100 sensors, including sensors on most meteorological satellites and some from other remote sensing satellites. 
 
    cycle
    cycles
@@ -118,6 +118,7 @@ Glossary
       The radar-indicated top of an area of precipitation. Specifically, it contains the height of the 18 dBZ reflectivity value.
 
    EMC
+   Environmental Modeling Center
       The `Environmental Modeling Center <https://www.emc.ncep.noaa.gov/emc_new.php>`__ is one of :term:`NCEP`'s nine centers and leads the :term:`National Weather Service`'s modeling efforts.
 
    EnKF
@@ -224,6 +225,7 @@ Glossary
       The `National Center for Atmospheric Research <https://ncar.ucar.edu/>`__. 
 
    NCEP
+   National Centers for Environmental Prediction
       National Centers for Environmental Prediction (NCEP) is a branch of the :term: `National Weather Service` and consists of nine centers, including the :term:`Environmental Modeling Center`. More information can be found at https://www.ncep.noaa.gov.
 
    NCEPLIBS
@@ -232,7 +234,7 @@ Glossary
 
    NCEPLIBS-external
       A collection of third-party libraries required to build :term:`NCEPLIBS`, :term:`chgres_cube`, 
-      the UFS Weather Model, and the :term:`UPP`. They are included in the :term:`HPC-Stack` and in :term:`spack-stack`.  
+      the UFS Weather Model, and the :term:`UPP`. They are included in the :term:`HPC-Stack` and in :term:`spack-stack`. 
 
    NCL
       An interpreted programming language designed specifically for scientific data analysis and 
@@ -255,6 +257,7 @@ Glossary
       The `National Unified Operational Prediction Capability <https://earthsystemmodeling.org/nuopc/>`__ Layer "defines conventions and a set of generic components for building coupled models using the Earth System Modeling Framework (:term:`ESMF`)." 
 
    NWP
+   Numerical Weather Prediction
       Numerical Weather Prediction (NWP) takes current observations of weather and processes them with computer models to forecast the future state of the weather. 
 
    Orography
@@ -305,18 +308,15 @@ Glossary
 
 
    UFS_UTILS
-      A collection of code used by multiple :term:`UFS` apps (e.g., the UFS Short-Range Weather App,
-      the UFS Medium-Range Weather App). The grid, orography, surface climatology, and initial 
-      and boundary condition generation code used by the UFS Short-Range Weather App is all 
-      part of this collection.
+      The :term:`UFS` Utilities repository contains a collection of pre-processing programs for use with the UFS Weather Model and UFS applications. These programs set up the model grid and create coldstart initial conditions. The code is publicly available on the `UFS_UTILS <https://github.com/ufs-community/UFS_UTILS>`__ Github repository.
 
    Umbrella repository
       A repository that houses external code, or "externals," which are pulled in from additional repositories during a "build" process.
 
    UPP
-      The `Unified Post Processor <https://dtcenter.org/community-code/unified-post-processor-upp>`__ is the :term:`post processor` software developed at :term:`NCEP`. It is used operationally to 
+   Unified Post Processor
+      The `Unified Post Processor <https://dtcenter.org/community-code/unified-post-processor-upp>`__ is the :term:`post-processor` software developed at :term:`NCEP`. It is used operationally to 
       convert the raw output from a variety of :term:`NCEP`'s :term:`NWP` models, including the :term:`FV3 dycore`, to a more useful form.
-
    
    Verification
       The process of comparing forecasts to relevant observations and analyses to measure the forecast goodness.
@@ -328,7 +328,7 @@ Glossary
       Individuals and organizations from public, private, and academic sectors that contribute to the research, development, and production of weather forecast products; primary consumers of these weather forecast products.
 
    Weather Model
-      A prognostic model that can be used for short- and medium-range research and operational forecasts. It can be an atmosphere-only model or an atmospheric model coupled with one or more additional components, such as a wave or ocean model. 
+      A prognostic model that can be used for short- and medium-range research and operational forecasts. It can be an atmosphere-only model or an atmospheric model coupled with one or more additional components, such as a wave or ocean model. The UFS Weather Model repository is publicly available on `GitHub <https://github.com/ufs-community/ufs-weather-model>`__. 
 
    Workflow
       The sequence of steps required to run an experiment from start to finish. 
